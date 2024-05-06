@@ -1,0 +1,51 @@
+.details {
+  height: 100vh;
+  padding-top: 128px;
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.detail__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.details__image {
+  width: 200px;
+}
+
+.detail__info {
+  max-width: 550px;
+  margin: 20px;
+}
+
+.detail__price {
+  color: red;
+  font-weight: bold;
+}
+
+.details__button {
+  background-color: lightgreen;
+  border: none;
+  padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.details__button:hover {
+  background-color: rgb(124, 210, 124);
+}
+
+@media (min-width: 1024px) {
+  .detail__container {
+    flex-direction: row;
+  }
+  .details__image {
+    width: 400px;
+  }
+}

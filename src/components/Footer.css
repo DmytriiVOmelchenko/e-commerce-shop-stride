@@ -1,0 +1,16 @@
+.footer {
+  margin-top: 40px;
+  background-color: lightblue;
+  padding: 36px;
+  box-shadow: 0px -5px 8px -4px rgba(0, 0, 0, 0.2);
+}
+
+.footer__container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.footer__container p {
+  text-align: center;
+  color: gray;
+}

@@ -1,0 +1,126 @@
+.sidebar__outside {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar,
+.sidebar__active {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  transition: all 0.4s ease;
+  padding: 20px;
+}
+
+.sidebar {
+  right: -100%;
+}
+
+.sidebar__active {
+  right: 0;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 2px solid lightblue;
+}
+
+.sidebar__header-title {
+  font-size: 1.1rem;
+  color: gray;
+}
+
+.sidebar__back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar__back-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebar__cart-items {
+  height: 70%;
+  border-bottom: 2px solid lightblue;
+  margin-bottom: 10px;
+  overflow-x: scroll;
+}
+
+.sidebar__footer-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sidebaer__total-amount {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.sidebar__footer-clear {
+  background-color: red;
+  padding: 15px;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sidebar__footer-clear:hover {
+  scale: 1.1;
+}
+
+.sidebar__button {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__button button {
+  border: none;
+  border-radius: 15px;
+  background-color: lightgreen;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Додаємо перехід для плавного ефекту */
+}
+
+.sidebar__button button:hover {
+  transform: translateY(-5px); /* Піднімаємо кнопку при hover */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Посилюємо тінь при hover */
+}
+
+@media (min-width: 1024px) {
+  .sidebar,
+  .sidebar__active {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sidebar,
+  .sidebar__active {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  sidebar,
+  .sidebar__active {
+    width: 30vw;
+  }
+}

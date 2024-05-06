@@ -1,0 +1,86 @@
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.product__container-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightblue;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.product__image {
+  padding: 20px;
+  max-width: 100%;
+  max-height: 224px;
+  transition: transform 0.4s ease;
+}
+
+.product:hover .product__image {
+  transform: scale(1.1);
+}
+
+.product:hover .product__container-image {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.product__title {
+  font-weight: 600;
+  text-align: center;
+  flex: 1;
+  margin: 0;
+}
+
+.product__price {
+  text-align: center;
+}
+
+.product__action {
+  display: flex;
+  gap: 10px;
+  transition: all 0.3s ease;
+  position: absolute;
+  top: 10px;
+  right: -100%;
+  opacity: 0;
+}
+
+.product:hover .product__action {
+  right: 50%;
+  transform: translateX(50%);
+  opacity: 1;
+}
+
+.product__button {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.product__button:first-child:hover {
+  background-color: lightgreen;
+}
+
+.product__button:last-child:hover {
+  background-color: lightyellow;
+}
+
+.product__icon-plus,
+.product__icon-eye {
+  color: gray;
+  width: 24px;
+  height: 24px;
+}
